@@ -1,0 +1,41 @@
+
+pre coding checks:
+make sure specflow is installed as an extension
+make sure NUnit is installed as an MSI
+
+
+create MVC project
+create MVC feature project
+create MVC.test project
+nuget specflow+nunit, moq in feature project
+nuget knockoutjs in main project
+nuget nunit, moq in test project
+
+create new featurefile 
+add feature and scenario
+right click to generate skeleton steps file from feature file
+
+nuget coypu in feature project
+nuget phantomjs in feature project
+
+create CoypuInitializer class set to use PhantomJS ( populate port we are using set to 3808)
+create empty controller
+create view from this and set default route
+add ui to make first when step pass
+reference knockoutjs in view and add ModelView JS and knockout applybinding() for the MV
+convert model data to JSON for use in the MV using: 
+
+<script type="text/javascript">
+    var initialData = function() {
+        return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+    }();</script>
+
+ then populate observablearray with the data
+
+to save data back use "ko.utils.PostJson(location.href, { customers: self.customers });" in VM
+then create JsonModelBinder.cs to create a binder to deserialize the JSON, then add it to the binders in Global.asax.cs - "ModelBinders.Binders.Add(typeof(IEnumerable<Customer>), new JsonModelBinder());"
+then add the HttpPost ActionResult to the controller
+
+
+
+to connect to the localdb need to use servername '(localdb)\v11.0'

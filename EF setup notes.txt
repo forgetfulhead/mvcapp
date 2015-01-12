@@ -1,0 +1,10 @@
+PM-> Install-Package EntityFramework
+create empty DbContext class
+optionally setup connection string in .config  --><add name="MyDbContext" providerName="System.Data.SqlClient" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=MyToDoDB;Integrated Security=SSPI" />
+PM-> Enable-Migrations
+Configuration.cs is created - Seed() method called after every miration, use to add data
+create model classes
+add classes to DbContext
+PM-> Add-Migration -Name CreateClasses
+apply migrations
+PM-> Update-Database

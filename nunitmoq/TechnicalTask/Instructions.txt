@@ -1,0 +1,2 @@
+The solution includes two projects, one that performs the Technical Task and a second that contains all the NUnit tests that were created while producing the first project. All code was written using TDD except code in the Program.cs file which was written after the rest of the code had been created. 
+The External Libs folder contains the dlls for NUnit and Moq used during the development of the Program and the test project is compiled against these dlls.

@@ -1,0 +1,25 @@
+useful urls:
+
+coypu/specflow
+https://github.com/featurist/coypu
+https://kashfarooq.wordpress.com/2011/08/23/bdd-with-specflow-and-coypu-part-2/
+http://www.codeproject.com/Articles/82891/BDD-using-SpecFlow-on-ASP-NET-MVC-Application
+
+knockout/mvc
+http://blog.stevensanderson.com/2010/07/12/editing-a-variable-length-list-knockout-style/   -- no ajax
+http://blogs.msdn.com/b/amar/archive/2012/12/12/hello-world-with-knockout-js-and-asp-net-mvc-4.aspx   --using ajax
+http://www.dotnetcurry.com/showarticle.aspx?ID=847  -- mvc webapi knockout, jquery
+
+
+code first ef
+http://csharppulse.blogspot.in/2013/09/learning-mvc-part-4-creating-mvc.html
+http://msdn.microsoft.com/en-us/data/jj193542
+http://weblogs.asp.net/scottgu/using-ef-code-first-with-an-existing-database
+http://tallmaris.com/entity-framework-primer-initial-configuration-and-migration/
+
+moq
+https://github.com/Moq/moq4
+https://github.com/Moq/moq4/wiki/Quickstart
+
+lamdas
+http://msdn.microsoft.com/en-us/library/bb397687.aspx

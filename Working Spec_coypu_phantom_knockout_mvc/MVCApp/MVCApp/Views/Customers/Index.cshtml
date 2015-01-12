@@ -1,0 +1,61 @@
+﻿@using System.Web.Script.Serialization
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/knockout-3.2.0.js"></script>
+
+<script type="text/javascript">
+    var initialData = function() {
+        return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+    }();</script>
+
+<h2>Customers(<span data-bind="text: customers().length"></span>)</h2>
+<table>
+    <thead><tr>
+               <th>First Name</th><th>Last Name</th>
+           </tr></thead>    
+    <tbody data-bind="foreach: customers ">
+        <tr>
+            <td><input data-bind="value: firstName"/></td>
+            <td><input data-bind="value: lastName"/></td>
+            <td><a href="#" data-bind="click: $root.removeCustomer">Remove</a></td>
+
+        </tr>
+         
+    </tbody>
+</table>
+
+<button name="addCustomer" data-bind="click: addCustomer ">Add Customer</button>
+
+<form class="customerEditor" data-bind="submit: save">
+  <button name="saveCustomers" data-bind="enable: true" type="submit">Save</button>
+  
+</form>
+
+<script type="text/javascript">
+    function Customer(firstName, lastName) {
+        var self = this;
+        self.firstName = ko.observable(firstName);
+        self.lastName = ko.observable(lastName);
+    }
+
+
+    function CustomerViewModel() {
+        var self = this;
+
+        self.customers = ko.observableArray(initialData);
+
+        self.addCustomer = function () {
+            self.customers.push(new Customer("new", "customer"));
+        };
+        self.removeCustomer = function (customer) { self.customers.destroy(customer); };
+
+        self.save = function() {
+            ko.utils.postJson(location.href, { customers: self.customers });
+        };
+    }
+
+    ko.applyBindings(new CustomerViewModel());
+</script>
+

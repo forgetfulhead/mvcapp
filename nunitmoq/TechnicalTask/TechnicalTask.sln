@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTask", "TechnicalTask\TechnicalTask.csproj", "{AFD46B94-34FF-4A31-ABC1-EAE21D993D5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalTask.Tests", "TechnicalTask.Tests\TechnicalTask.Tests.csproj", "{46578310-2AD0-40C0-B98C-E6C7F58E2081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD46B94-34FF-4A31-ABC1-EAE21D993D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD46B94-34FF-4A31-ABC1-EAE21D993D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD46B94-34FF-4A31-ABC1-EAE21D993D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD46B94-34FF-4A31-ABC1-EAE21D993D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46578310-2AD0-40C0-B98C-E6C7F58E2081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46578310-2AD0-40C0-B98C-E6C7F58E2081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46578310-2AD0-40C0-B98C-E6C7F58E2081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46578310-2AD0-40C0-B98C-E6C7F58E2081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
